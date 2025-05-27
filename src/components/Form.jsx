@@ -47,10 +47,19 @@ export default function Form() {
           <div>
             <button
               type="submit"
-              className="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600 text-lg transition cursor-pointer"
+              className="bg-indigo-500 mr-4 text-white px-4 py-2 rounded hover:bg-indigo-600 text-lg transition cursor-pointer"
             >
               Submit
             </button>
+            
+            <button
+              type="reset"
+              className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 text-lg transition cursor-pointer"
+              onClick={() => setFormData({ name: "", email: "" })}
+            >
+              Reset
+            </button>
+            
           </div>
         </div>
       </form>
